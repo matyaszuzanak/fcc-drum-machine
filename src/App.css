@@ -7,8 +7,7 @@
 }
 #display {
   height: vh;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
@@ -17,8 +16,7 @@
 #drum-pads {
   height: 50vh;
   width: 75vw;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -27,7 +25,7 @@
   border: 1px solid black;
   height: 20vh;
   width: 20vh;
-
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 1vw;
