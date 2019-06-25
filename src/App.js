@@ -40,8 +40,8 @@ class DrumPad extends React.Component {
   render() {
     return (
       <div className="drum-pad" id={this.props.id} onClick={this.handleClick}>
-        <h1>{this.props.letter}</h1>
-        <audio ref={ref => this.audio = ref} className="clip" src={this.props.src} id={this.props.letter} />
+        <h1>{this.props.keyTrigger}</h1>
+        <audio ref={ref => this.audio = ref} className="clip" src={this.props.url} id={this.props.keyTrigger} />
       </div>
     )
   }
@@ -53,10 +53,10 @@ class App extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div id="drum-machine">
         <div id="display" />
-        <div id="drum-pads">{sounds.map(s => (<DrumPad id={s.id} letter={s.letter} src={s.src} />))}</div> 
+        <div id="drum-pads">{sounds.map(s => (<DrumPad id={s.id} keyTrigger={s.keyTrigger} src={s.url} />))}</div>
       </div>
     )
   }
