@@ -10,9 +10,9 @@
 }
 
 #display {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
-  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 #drum-pads {
@@ -20,6 +20,7 @@
   width: 5vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 250px;
   }
 
 .drum-pad {
