@@ -4,6 +4,8 @@
 
 #drum-machine {
   background-color: #fdfdfd;
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr
 }
 #display {
   height: vh;
