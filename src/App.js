@@ -56,7 +56,7 @@ class App extends React.Component {
     return(
       <div id="drum-machine">
         <div id="display" />
-        <div id="drum-pads">{data.map(d => (<DrumPad id={d.id} letter={d.letter} src={d.src} />))}</div> 
+        <div id="drum-pads">{sounds.map(s => (<DrumPad id={s.id} letter={s.letter} src={s.src} />))}</div> 
       </div>
     )
   }
