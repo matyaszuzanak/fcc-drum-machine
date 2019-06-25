@@ -70,11 +70,13 @@ class App extends React.Component {
   render() {
     return (
       <div id="drum-machine">
-        <div id="display">{this.state.display}</div>
-        <div id="drum-pads">
-          {sounds.map(s => (<DrumPad
-            key={s.id} id={s.id} keyTrigger={s.keyTrigger} src={s.src} handleDisplay={this.handleDisplay} />
-          ))}</div>
+        <div class="d-flex p-2">
+          <div id="display">{this.state.display}</div>
+          <div id="drum-pads">
+            {sounds.map(s => (<DrumPad
+              key={s.id} id={s.id} keyTrigger={s.keyTrigger} src={s.src} handleDisplay={this.handleDisplay} />
+            ))}</div>
+        </div>
       </div>
     )
   }

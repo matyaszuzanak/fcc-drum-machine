@@ -1,36 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 #root {
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center; 
-  height: 1000vh;
-}
-
-#drum-machine {
+  height: 100vh;
   background-color: #fdfdfd;
 }
+
 #display {
-  height: vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 50px;
 }
 
 #drum-pads {
-  height: 50vh;
-  width: 75vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  height: 40vh;
+  width: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
 
 .drum-pad {
-  border: 1px solid black;
-  height: 20vh;
-  width: 20vh;
+  border: 2px solid black;
+  height: 12.5vh;
+  width: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 1vw;
-  background-color: #84eeff;
+  margin-right: 0.25vw;
+  background-color: #335fd8;
 }
