@@ -1,17 +1,19 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 1000vh;
 }
 
 #drum-machine {
   background-color: #fdfdfd;
 }
 #display {
+  height: vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 #drum-pads {
