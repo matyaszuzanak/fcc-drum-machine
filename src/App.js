@@ -39,36 +39,27 @@ class DrumPad extends React.Component {
 
   render() {
     return (
-      <div className="drum-pad" id={this.props.id} onClick={this.handleClick} />
-      <h1>{this.props.letter}</h1>
-      <audio ref={ref => this.audio = ref} className="clip" src={this.props.src} id={this.props.letter} />
+      <div className="drum-pad" id={this.props.id} onClick={this.handleClick}>
+        <h1>{this.props.letter}</h1>
+        <audio ref={ref => this.audio = ref} className="clip" src={this.props.src} id={this.props.letter} />
+      </div>
     )
   }
-
 }
 
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
 
-
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+    return(
+      <div id="drum-machine">
+        <div id="display" />
+        <div id="drum-pads">{data.map(d => (<DrumPad id={d.id} letter={d.letter} src={d.src} />))}</div> 
+      </div>
+    )
+  }
 }
 
 export default App;
